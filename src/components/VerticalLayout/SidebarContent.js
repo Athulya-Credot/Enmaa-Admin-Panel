@@ -209,11 +209,20 @@ const SidebarContent = props => {
               </ul>
             </li>
             <li>
-              <li><Link to='/'>{props.t("Navbar")}</Link></li>
-              <li><Link to='/'>{props.t("footer")}</Link></li>
-              <li><Link to='/'>{props.t("Navbar")}</Link></li>
-          
-
+              <Link to="/#" className="has-arrow ">
+                <FeatherIcon
+                  icon="file-text"
+                />{" "}
+                <span>{props.t("Menu")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li>
+                  <Link to="/">{props.t("Navbar Menu")}</Link>
+                </li>
+                <li>
+                  <Link to="/">{props.t("Footer Menu")}</Link>
+                </li>
+              </ul>
             </li>
             {/* <li1>
               <Link to="/#" className="has-arrow">
@@ -310,14 +319,14 @@ const SidebarContent = props => {
                 <FeatherIcon
                   icon="users"
                 />{" "}
-                <span>{props.t("Messages")}</span>
+                <span>{props.t("Contacts")}</span>
               </Link>
               <ul className="sub-menu">
                 <li>
-                  <Link to="/page-login">{props.t("Contacts")}</Link>
+                  <Link to="/page-login">{props.t("Contact ")}</Link>
                 </li>
                 <li>
-                  <Link to="/page-register">{props.t("Complaints")}</Link>
+                  <Link to="/page-register">{props.t("Complaint ")}</Link>
                 </li>
                 <li>
                   <Link to="/page-recoverpw">
@@ -327,12 +336,12 @@ const SidebarContent = props => {
                 
               </ul>
             </li>
-            <li>
+            {/* <li1>
               <Link to="/#" className="has-arrow">
                 <FeatherIcon
                   icon="users"
                 />{" "}
-                <span>{props.t("Authentication")}</span>
+                <span>{props.t("UserHome pageHome page")}</span>
               </Link>
               <ul className="sub-menu">
                 <li>
@@ -343,7 +352,7 @@ const SidebarContent = props => {
                   <Link to="/page-lock-screen">{props.t("Admin")}</Link>
                 </li>
               </ul>
-            </li>
+            </li1> */}
             
 {/* 
             <li className="menu-title">{props.t("Elements")}</li>

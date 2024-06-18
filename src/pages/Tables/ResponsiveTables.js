@@ -19,7 +19,10 @@ const ResponsiveTables = () => {
       <div className="page-content">
         <div className="container-fluid">
           <Breadcrumbs title="Tables" breadcrumbItem="Home page" />
-
+          <form>
+            <label>seo title</label>
+            <label>slug</label>
+            </form>
           <Row>
             <Col>
               <Card>
@@ -57,7 +60,7 @@ const ResponsiveTables = () => {
                               <Td>{rowData.time}</Td>
                               <Td>{rowData.change}</Td>
                               <Td className=""><img src={logoSvg} alt="" height="24" /></Td>
-                              <Td className="d-flex align-items-center justify-content-center"><Link to="/form-elements"className="btn btn-primary">Edit</Link></Td>
+                              <Td className="d-flex align-items-center justify-content-center"><Link to="/form-elements"className="btn btn-primary ">Edit</Link></Td>
                            
                             </Tr>
                           ))}
