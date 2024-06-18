@@ -35,40 +35,35 @@ const FormElements = () => {
                             </Card>
                         </Col>
                     </Row>
-                        <Col xs={12}>
+                        {/* <Col1 xs={12}>
                             <Card>
                                 <CardHeader>
                                     <h4 className="card-title">Section 2</h4>
                                     <p className="card-title-desc">Here you can change the each <code> HEADING & IMAGE</code> </p>
                                 </CardHeader>
                                 <CardBody className="p-4">
-                                    {/* import TextualInputs */}
+                                    {/* import TextualInputs 
                                     <TextualInputs />
                                 </CardBody>
                             </Card>
-                        </Col>
-                    <Row>
-                        {/* import SizingInput  */}
-                        <SizingInput />
-                        {/* import RangeInputs  */}
-                        <RangeInputs />
-                    </Row>
-                    <Row>
+                        </Col1> */}
+      
+                    {/* <Row>
                         <Col lg={12}>
                             <Card>
                                 <CardHeader>
                                     <h4 className="card-title">Form layouts</h4>
                                     <p className="card-title-desc">Form layout options : from inline, horizontal & custom grid implementations</p>
                                 </CardHeader>
-                                <CardBody className="p-4">
+                                <CardBody className="p-4"> */}
                                     {/* import Formlayouts */}
-                                    <Formlayouts />
+                                    {/* <Formlayouts />
                                 </CardBody>
                             </Card>
                         </Col>
-                    </Row>
+                    </Row> */}
                     {/* import Checkbox */}
-                    <Checkboxes />
+                    {/* <Checkboxes /> */}
                 </Container>
             </div>
         </React.Fragment>

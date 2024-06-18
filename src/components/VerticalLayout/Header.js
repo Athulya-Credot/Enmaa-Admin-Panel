@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-
 //Import Icons
 import FeatherIcon from "feather-icons-react";
 
@@ -85,7 +84,7 @@ const Header = props => {
 
               <Link to="/dashboard" className="logo logo-light">
                 <span className="logo-sm">
-                  <img src={logoSvg} alt="" height="24" />
+                  <img src={logoSvg} alt={logoSvg} height="24" />
                 </span>
                 <span className="logo-lg">
                   <img src={logoSvg} alt="" height="24" /> <span className="logo-txt">Enma'a</span>

@@ -77,6 +77,8 @@ import FormMask from "../pages/Forms/FormMask";
 import BasicTable from "../pages/Tables/BasicTables";
 import DatatableTables from "../pages/Tables/DatatableTables";
 import ResponsiveTables from "../pages/Tables/ResponsiveTables";
+import Enquiretable from "../pages/Tables/Propertytable";
+import TeamTable from "../pages/Tables/TeamTable";
 import EditableTables from "../pages/Tables/EditableTables";
 
 //Charts
@@ -117,6 +119,9 @@ const userRoutes = [
   { path: "/", component: <Dashboard/> },
   //dashboard
   { path: "/dashboard", component: <Dashboard/> },
+  { path: "/home", component:  <ResponsiveTables/>},
+  { path: "/our-team", component:  <TeamTable/>},
+
 
   //profile
   { path: "/profile", component: <UserProfile/> },
@@ -182,7 +187,11 @@ const userRoutes = [
   { path: "/extended-notifications", component: <Notifications/> },
 
   //Forms
-  { path: "/form-elements", component:  <ResponsiveTables/>},
+  { path: "/form-elements", component:  <FormElements/>},
+  { path: "/enquire-property", component:  <Enquiretable/>},
+  { path: "/home", component:  <ResponsiveTables/>},
+  { path: "/our-team", component:  <TeamTable/>},
+
   { path: "/form-validation", component: <FormValidation/> },
   { path: "/form-advanced", component: <AdvancedPlugins/> },
   { path: "/form-editors", component: <FormEditors/> },

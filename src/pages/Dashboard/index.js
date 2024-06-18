@@ -19,6 +19,7 @@ import CountUp from "react-countup";
 import { WidgetsData } from "../../common/data/dashboard";
 import Doughnut from "../AllCharts/echart/doughnutchart";
 import {  CardHeader } from "reactstrap";
+import LineBar from "../AllCharts/echart/linebarchart";
 
 import WalletBalance from './WalletBalance';
 import InvestedOverview from './InvestedOverview';
@@ -146,6 +147,18 @@ const Dashboard = () => {
 
                     </Row>
                     <Row>
+                    <Col xl="6">
+              <Card>
+                <CardHeader>
+                  <h4 className="card-title mb-0">Mix Line-Bar</h4>
+                </CardHeader>
+                <CardBody>
+                  <div id="mix-line-bar" className="e-chart">
+                    <LineBar />
+                  </div>
+                </CardBody>
+              </Card>
+            </Col>
                     <Col xl="6">
               <Card>
                 <CardHeader>

@@ -159,26 +159,34 @@ const SidebarContent = props => {
               </Link>
             </li>
             <li>
-              <Link to="/dashboard" className="">
+              <Link to="/#" className="has-arrow ">
                 <FeatherIcon
-                  icon="box"
+                  icon="file-text"
                 />{" "}
                 <span>{props.t("Enquiries")}</span>
               </Link>
+              <ul className="sub-menu">
+                <li>
+                  <Link to="/enquire-property">{props.t("Property Enquiries")}</Link>
+                </li>
+                <li>
+                  <Link to="/enquire-property">{props.t("Investor  Enquiries")}</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link to="/#" className="has-arrow ">
                 <FeatherIcon
                   icon="file-text"
                 />{" "}
-                <span>{props.t("CMS")}</span>
+                <span>{props.t("CMS Pages")}</span>
               </Link>
               <ul className="sub-menu">
                 <li>
-                  <Link to="/form-elements">{props.t("home page")}</Link>
+                  <Link to="/home">{props.t("home page")}</Link>
                 </li>
                 <li>
-                  <Link to="/pages-maintenance">{props.t("Our Team")}</Link>
+                  <Link to="/our-team">{props.t("Our Team")}</Link>
                 </li>
                 <li>
                   <Link to="/annual-report">{props.t("Annual Report")}</Link>
@@ -200,8 +208,14 @@ const SidebarContent = props => {
                 </li> */}
               </ul>
             </li>
-
             <li>
+              <li><Link to='/'>{props.t("Navbar")}</Link></li>
+              <li><Link to='/'>{props.t("footer")}</Link></li>
+              <li><Link to='/'>{props.t("Navbar")}</Link></li>
+          
+
+            </li>
+            {/* <li1>
               <Link to="/#" className="has-arrow">
                 <FeatherIcon
                   icon="grid"
@@ -265,7 +279,7 @@ const SidebarContent = props => {
                   <Link to="/#" className="has-arrow ">
                     {/* <span className="badge rounded-pill badge-soft-danger text-danger float-end">
                       New
-                    </span> */}
+                    </span> 
                     <span>{props.t("Blog")}</span>
                   </Link>
                   <ul className="sub-menu">
@@ -282,8 +296,37 @@ const SidebarContent = props => {
                 </li>
 
               </ul>
+            </li1> */}
+              {/* <li>
+              <Link to="/dashboard" className="">
+                <FeatherIcon
+                  icon="home"
+                />{" "}
+                <span>{props.t("Messages ")}</span>
+              </Link>
+            </li> */}
+            <li>
+              <Link to="/#" className="has-arrow">
+                <FeatherIcon
+                  icon="users"
+                />{" "}
+                <span>{props.t("Messages")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li>
+                  <Link to="/page-login">{props.t("Contacts")}</Link>
+                </li>
+                <li>
+                  <Link to="/page-register">{props.t("Complaints")}</Link>
+                </li>
+                <li>
+                  <Link to="/page-recoverpw">
+                    {props.t("Career")}
+                  </Link>
+                </li>
+                
+              </ul>
             </li>
-
             <li>
               <Link to="/#" className="has-arrow">
                 <FeatherIcon
@@ -293,41 +336,16 @@ const SidebarContent = props => {
               </Link>
               <ul className="sub-menu">
                 <li>
-                  <Link to="/page-login">{props.t("Login")}</Link>
+                  <Link to="/page-register">{props.t("User")}</Link>
                 </li>
+              
                 <li>
-                  <Link to="/page-register">{props.t("Register")}</Link>
-                </li>
-                <li>
-                  <Link to="/page-recoverpw">
-                    {props.t("Recover Password")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/page-lock-screen">{props.t("Lock Screen")}</Link>
-                </li>
-                <li>
-                  <Link to="/page-logout">
-                    {props.t("Log out")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/page-confirm-mail">{props.t("Confirm Mail")}</Link>
-                </li>
-                <li>
-                  <Link to="/page-email-verification">
-                    {props.t("Email Verification")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/page-two-step-verification">
-                    {props.t("Two Step Verification")}
-                  </Link>
+                  <Link to="/page-lock-screen">{props.t("Admin")}</Link>
                 </li>
               </ul>
             </li>
             
-
+{/* 
             <li className="menu-title">{props.t("Elements")}</li>
 
             <li>
@@ -336,8 +354,8 @@ const SidebarContent = props => {
                   icon="briefcase"
                 />{" "}
                 <span>{props.t("Components")}</span>
-              </Link>
-              <ul className="sub-menu">
+              </Link> */}
+              {/* <ul1 className="sub-menu">
                 <li>
                   <Link to="/ui-alerts">{props.t("Alerts")}</Link>
                 </li>
@@ -394,10 +412,10 @@ const SidebarContent = props => {
                 <li>
                   <Link to="/ui-utilities">{props.t("Utilities")}</Link>
                 </li>
-              </ul>
-            </li>
+              </ul1> */}
+            {/* </li> */}
 
-            <li>
+            {/* <li1>
               <Link to="/#" className="has-arrow ">
                 <FeatherIcon
                   icon="gift"
@@ -421,9 +439,9 @@ const SidebarContent = props => {
                   <Link to="/extended-notifications">{props.t("Notifications")}</Link>
                 </li>
               </ul>
-            </li>
+            </li1> */}
 
-            <li>
+            {/* <li1>
               <Link to="/#" className="">
                 <FeatherIcon
                   icon="box"
@@ -458,9 +476,10 @@ const SidebarContent = props => {
                   <Link to="/form-mask">{props.t("Form Mask")}</Link>
                 </li>
               </ul>
-            </li>
+            </li1> */}
 
-            <li>
+            {/* <li1> */}
+            {/* <li1>
               <Link to="/#" className="has-arrow ">
                 <FeatherIcon
                   icon="sliders"
@@ -483,9 +502,10 @@ const SidebarContent = props => {
                   <Link to="/tables-editable">{props.t("Editable")}</Link>
                 </li>
               </ul>
-            </li>
+            </li1> */}
+            {/* </li1> */}
 
-            <li>
+            {/* <li1>
               <Link to="/#" className="has-arrow ">
                 <FeatherIcon
                   icon="pie-chart"
@@ -504,9 +524,9 @@ const SidebarContent = props => {
                   <Link to="/charts-chartjs">{props.t("Chartjs")}</Link>
                 </li>
               </ul>
-            </li>
+            </li1> */}
 
-            <li>
+            {/* <li1>
               <Link to="/#" className="has-arrow ">
                 <FeatherIcon
                   icon="cpu"
@@ -529,9 +549,9 @@ const SidebarContent = props => {
                   <Link to="/icons-fontawesome">{props.t("Font awesome")}</Link>
                 </li>
               </ul>
-            </li>
+            </li1> */}
 
-            <li>
+            {/* <l1i>
               <Link to="/#" className="has-arrow ">
                 <FeatherIcon
                   icon="map"
@@ -549,9 +569,9 @@ const SidebarContent = props => {
                   <Link to="/maps-leaflet">{props.t("Leaflet")}</Link>
                 </li>
               </ul>
-            </li>
+            </l1i> */}
 
-            <li>
+            {/* <li1>
               <Link to="/#" className="has-arrow ">
                 <FeatherIcon
                   icon="share-2"
@@ -576,9 +596,9 @@ const SidebarContent = props => {
                   </ul>
                 </li>
               </ul>
-            </li>
-          </ul>
-          <div className="card sidebar-alert border-0 text-center mx-4 mb-0 mt-5">
+            </li1> */}
+           </ul>
+          {/* <div1 className="card sidebar-alert border-0 text-center mx-4 mb-0 mt-5">
             <div className="card-body">
               <img src={giftBox} alt="" />
               <div className="mt-4">
@@ -587,7 +607,8 @@ const SidebarContent = props => {
                 <a href="#!" className="btn btn-primary mt-2">Upgrade Now</a>
               </div>
             </div>
-          </div>
+            </div1> */} 
+         
         </div>
       </SimpleBar>
     </React.Fragment>

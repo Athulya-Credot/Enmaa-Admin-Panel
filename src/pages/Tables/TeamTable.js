@@ -10,7 +10,7 @@ import Pagination from "../../components/Common/Pagination"
 import logoSvg from "../../assets/images/logo-sm.png";
 import { Link } from "react-router-dom"
 
-const ResponsiveTables = () => {
+const TeamTable = () => {
   //meta title
   document.title = "Responsive Table | enmaa.com";
 
@@ -18,7 +18,7 @@ const ResponsiveTables = () => {
     <React.Fragment>
       <div className="page-content">
         <div className="container-fluid">
-          <Breadcrumbs title="Tables" breadcrumbItem="Home page" />
+          <Breadcrumbs title="Tables" breadcrumbItem="Enquire page" />
 
           <Row>
             <Col>
@@ -39,12 +39,11 @@ const ResponsiveTables = () => {
                       >
                         <Thead>
                           <Tr>
-                            <Th data-priority="1">section</Th>
-                            <Th data-priority="1">Title</Th>
-                            <Th data-priority="3">Sub Title</Th>
-                            <Th data-priority="1">description </Th>
-                            <Th data-priority="3">Banner</Th>
-                            <Th data-priority="3">Action</Th>
+                            <Th data-priority="1">Name</Th>
+                            <Th data-priority="1">Employee Id</Th>
+                            <Th data-priority="3">Position</Th>
+                            <Th data-priority="1">Field</Th>
+                            <Th data-priority="3">Photo</Th>
                           </Tr>
                         </Thead>
                         <Tbody>
@@ -82,4 +81,4 @@ const ResponsiveTables = () => {
   )
 }
 
-export default ResponsiveTables
+export default TeamTable
