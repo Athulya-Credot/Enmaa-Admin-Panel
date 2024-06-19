@@ -1,9 +1,9 @@
 import React from 'react';
 import { Col, Input, Label, Row } from 'reactstrap';
-import FormUpload from './../FormUpload';
+import FormUpload from '../FormUpload';
 import { Link } from "react-router-dom"
 
-const TextualInputs = () => {
+const Section1Form = () => {
     return (
         <React.Fragment>
             <Row>
@@ -51,15 +51,15 @@ const TextualInputs = () => {
                 
                 <Col lg={6}>
                     <div className="mb-3">
-                        <Label htmlFor="example-text-input" className="form-Label">Sidebar subtitle in English</Label>
+                        <Label htmlFor="example-text-input" className="form-Label">Sidebar Subtitle in English</Label>
                         <Input className="form-control" type="text" defaultValue="YEARS EXPERIENCES IN THIS FIELD" id="example-text-input" />
                     </div>
                 </Col>
                 <Col lg={6}>
                     <div className="mb-3">
                         <Label htmlFor="example-search-input" className="form-Label">Sidebar subtitle in Arabic</Label>
-                        <Input dir="rtl" className="form-control" type="text" defaultValue="سنوات من الخبرة
-في هذا الحقل" id="example-text-input" />
+                        <Input dir="rtl" className="form-control" type="text" defaultValue="سنوات من الخبرةفي هذا الحقل" id="example-text-input" />
+
                     </div>
 
                 </Col>
@@ -77,12 +77,6 @@ const TextualInputs = () => {
 
                 </Col>
                 
-                <Col lg={12}>
-                    <div className="mb-3">
-                        <Label htmlFor="example-text-input" className="form-Label">Button Link</Label>
-                        <Input className="form-control" type="text" defaultValue="https://enmaa-previews.vercel.app/services/service-1" id="example-text-input" />
-                    </div>
-                </Col>
                 <Col lg={6}>
                     <div className="mb-3">
                         <Label htmlFor="example-text-input" className="form-Label">Button Title in English</Label>
@@ -96,6 +90,12 @@ const TextualInputs = () => {
                     </div>
 
                 </Col>
+                <Col lg={12}>
+                    <div className="mb-3">
+                        <Label htmlFor="example-text-input" className="form-Label">Button Link</Label>
+                        <Input className="form-control" type="text" defaultValue="https://enmaa-previews.vercel.app/services/service-1" id="example-text-input" />
+                    </div>
+                </Col>
             </Row>
             <FormUpload />
             <div className='d-flex justify-content-end gap-3 p-4'>
@@ -106,4 +106,4 @@ const TextualInputs = () => {
     );
 }
 
-export default TextualInputs;
+export default Section1Form;

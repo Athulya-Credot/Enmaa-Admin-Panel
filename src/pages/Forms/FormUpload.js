@@ -55,7 +55,7 @@ const FormUpload = () => {
             <Col className="col-12">
               <Card>
                 <CardHeader>
-                  <h3 > BANNER PART</h3>
+                  <h3 > Banner Image</h3>
                   <p className="card-title-desc">
                     DropzoneJS is an open source library that provides
                     drag’n’drop file uploads with image previews.

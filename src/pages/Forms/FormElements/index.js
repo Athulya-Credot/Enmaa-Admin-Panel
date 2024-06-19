@@ -9,7 +9,7 @@ import Checkboxes from './Checkboxes';
 import Formlayouts from './Formlayouts';
 import RangeInputs from './RangeInputs';
 import SizingInput from './SizingInput';
-import TextualInputs from './Textual-inputs';
+import TextualInputs from './Section1Form';
 import { Link } from "react-router-dom"
 
 const FormElements = () => {
@@ -21,7 +21,7 @@ const FormElements = () => {
                 <Container fluid>
                     {/* Render Breadcrumbs */}
                     <div className='d-flex justify-content-between'>
-                    <Breadcrumbs title="Forms" breadcrumbItem="Home Page" />
+                    <Breadcrumbs title="Forms" breadcrumbItem=" Section 1" />
                     <div className='d-flex flex-end gap-3 p-4'>
             <Link to="/form-elements"className=" d-flex align-items-center gap-2 btn btn-outline-light"><i className="mdi mdi-file-document"></i>Guidelines</Link>
             <Link to="/https://enmaa-previews.vercel.app/" className=" d-flex align-items-center gap-2 btn btn-outline-light" target="_blank"><i className="mdi mdi-open-in-new"></i>Preview</Link>
