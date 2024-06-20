@@ -161,7 +161,7 @@ const SidebarContent = props => {
             <li>
               <Link to="/#" className="has-arrow ">
                 <FeatherIcon
-                  icon="file-text"
+                  icon="box"
                 />{" "}
                 <span>{props.t("Enquiries")}</span>
               </Link>
@@ -183,22 +183,31 @@ const SidebarContent = props => {
               </Link>
               <ul className="sub-menu">
                 <li>
-                  <Link to="/home">{props.t("home page")}</Link>
+                  <Link to="/home">{props.t("Home Page")}</Link>
                 </li>
                 <li>
-                  <Link to="/our-team">{props.t("Our Team")}</Link>
+                  <Link to="/#our-team">{props.t("About")}</Link>
+                </li>
+                <li>
+                  <Link to="/#our-team">{props.t("Government Bots")}</Link>
+                </li>
+                <li>
+                  <Link to="/#our-team">{props.t("Services")}</Link>
+                </li>
+                <li>
+                  <Link to="/#our-team">{props.t("Corporate Governance")}</Link>
                 </li>
                 <li>
                   <Link to="/annual-report">{props.t("Annual Report")}</Link>
                 </li>
                 <li>
-                  <Link to="/pages-timeline">{props.t("Disclosures")}</Link>
+                  <Link to="/disclosures">{props.t("Disclosures")}</Link>
                 </li>
                 <li>
-                  <Link to="/pages-faqs">{props.t("Finanical Statement")}</Link>
+                  <Link to="/finanical-statement">{props.t("Finanical Statement")}</Link>
                 </li>
                 <li>
-                  <Link to="/pages-pricing">{props.t("Blog Details")}</Link>
+                  <Link to="/b">{props.t("Blog Details")}</Link>
                 </li>
                 {/* <li>
                   <Link to="/pages-404">{props.t("Error 404")}</Link>
@@ -211,7 +220,7 @@ const SidebarContent = props => {
             <li>
               <Link to="/#" className="has-arrow ">
                 <FeatherIcon
-                  icon="file-text"
+                  icon="share-2"
                 />{" "}
                 <span>{props.t("Menu")}</span>
               </Link>
@@ -224,6 +233,7 @@ const SidebarContent = props => {
                 </li>
               </ul>
             </li>
+            
             {/* <li1>
               <Link to="/#" className="has-arrow">
                 <FeatherIcon
@@ -317,24 +327,32 @@ const SidebarContent = props => {
             <li>
               <Link to="/#" className="has-arrow">
                 <FeatherIcon
-                  icon="users"
+                  icon="grid"
                 />{" "}
                 <span>{props.t("Contacts")}</span>
               </Link>
               <ul className="sub-menu">
                 <li>
-                  <Link to="/page-login">{props.t("Contact ")}</Link>
+                  <Link to="/contact">{props.t("Contact ")}</Link>
                 </li>
                 <li>
-                  <Link to="/page-register">{props.t("Complaint ")}</Link>
+                  <Link to="/complaint">{props.t("Complaint ")}</Link>
                 </li>
                 <li>
-                  <Link to="/page-recoverpw">
+                  <Link to="/career">
                     {props.t("Career")}
                   </Link>
                 </li>
                 
               </ul>
+            </li>
+            <li>
+              <Link to="/#user" className="">
+                <FeatherIcon
+                  icon="users"
+                />{" "}
+                <span>{props.t("User")}</span>
+              </Link>
             </li>
             {/* <li1>
               <Link to="/#" className="has-arrow">
